@@ -1,0 +1,232 @@
+
+  .first-section {
+    height: 100vh;
+  }
+  
+  .landing-section {
+      width: 50%;
+      margin: auto;
+  }
+  
+  .landing-content-left {
+      position: relative;
+      right: 16vmax;
+  }
+  
+  .landing-logo {
+    width: 100%;
+  }
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* @keyframes showBtn {
+  to { opacity: 1; }
+} */
+.animated-title {
+  color: #222;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #1aa177;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+/* .landing-contact-btn {
+  animation: showBtn 2s 3s linear;
+} */
+
+.contact-btn {
+  border-radius: 20px;
+  height: 10px;
+  line-height: 5px;
+  color: #222222;
+  width: 150px;
+  font-size: 15px;
+  padding: 20px;
+  background-color: #1AA177;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.second-section {
+  min-height: 800px;
+  padding: 10px 0;
+}
+
+.services {
+   width: 90%;
+   margin: auto;
+ }
+ 
+ .services-container {
+   width: 80%;
+   margin: auto;
+   display: inline-flex;
+   justify-content: center;
+ }
+ 
+ .landing-titles {
+   text-align: center;
+   margin: 50px 0;
+   color: #222;
+ }
+ 
+ .services-card {
+   min-height: 400px;
+   width: 250px;
+   transition: 0.5s ease-in-out;
+ }
+
+ .services-card:hover {
+  transform: scale(1.1);
+ }
+ 
+ .services-icon {
+   max-height: 100px;
+   width: 60%;
+   margin: auto;
+ 
+ }
+ 
+ 
+ 
+ .services-content {
+   min-height: 300px;
+   padding: 70px 0 10px 0;
+   background: linear-gradient(to top, #19a378 40%, #D3D3D3 100%);
+   border-radius: 5%;
+ }
+ 
+ .services-content-details {
+   margin: 10px;
+ }
+ 
+ .services-content-details-title {
+   text-align: center;
+ }
+
+ .landing-logo {
+   width:50vmax !important;
+   margin: auto;
+ }
+
+
+ .third-section {
+  min-height: 50vh;
+  width: 80%;
+  padding: 20px 0;
+  margin: auto;
+}
+
+
+.card {
+  background-color: transparent !important;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.forth-section {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.social-title {
+  color: #222;
+}
+
+.social-icons {
+  width: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+
+.link{
+  position: relative;
+}
+
+.link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #222;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

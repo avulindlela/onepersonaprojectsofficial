@@ -1,0 +1,77 @@
+.navigation-brand {
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    margin: 3vmax auto;
+}
+
+.brand-logo {
+    width: 100%;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-links {
+    color: black;
+    margin-left: 2rem;
+}
+
+.navigation-links:hover {
+    color: black;
+    font-weight:bold;
+    border-top: #1aa177 2px solid;
+}
+
+.menu {
+    width: 50px;
+    margin: 100% auto;
+    cursor: pointer;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background: black;
+    margin: 6px 0;
+    border-radius:10px;
+    transition: 0.4s;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+.change .one {
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform: rotate(-45deg) translate(-9px,6px);
+}
+
+.change .two {
+    opacity: 0;
+    margin-left: 20px;
+    transition: 1s;
+}
+
+.change .three {
+    -webkit-transform: rotate(45deg) translate(-8px,-8px);
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+
+.menu-icon {
+    width: 2rem;
+}
+np
+.active-page {
+    font-weight: bold;
+    border-top:#1aa177 2px solid;
+}
+
+.navbar {
+    position: absolute !important;
+    right: 2rem;
+}
