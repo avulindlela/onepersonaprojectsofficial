@@ -13,7 +13,7 @@
       right: 16vmax;
   }
   
-  .landing-logo {
+  #landing-logo {
     width: 100%;
   }
 
@@ -108,7 +108,6 @@
  }
  
  .services-container {
-   width: 80%;
    margin: auto;
    display: inline-flex;
    justify-content: center;
